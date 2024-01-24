@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Read CSV file
+data = pd.read_csv('your_data.csv')
+
+# Create a bar chart
+data['Category'].value_counts().plot(kind='bar')
+plt.title('Distribution of Categories')
+plt.xlabel('Category')
+plt.ylabel('Count')
+plt.show()
